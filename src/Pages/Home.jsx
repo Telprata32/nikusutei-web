@@ -10,12 +10,10 @@ const styles = {
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundAttachment:"fixed",
-    boxShadow: 'inset 0px 230px 1500px 101px #131212D1'
   },
   topNav_Bar: {
     display: "flex",
     justifyContent: "space-around",
-    position:'sticky',
     top:'0px',
     width:'40%',
     marginLeft:'30%',
@@ -42,10 +40,16 @@ function Home() {
             </span>
             <span style={{ color: "white" }}>Japanese Muslim Restaurant</span>
           </div>
-          <span style={{ color: "white", paddingTop:'7px' }}>ABOUT US</span>
-          <span style={{ color: "white", paddingTop:'7px' }}>CONTACT US</span>
-          <span style={{ color: "white", paddingTop:'7px' }}>MENU</span>
-          <span style={{ color: "white", paddingTop:'7px' }}>SERVICES</span>
+          <span style={{ color: "white", paddingTop:'10px' }}>ABOUT US</span>
+          <span style={{ color: "white", paddingTop:'10px' }}>CONTACT US</span>
+          <span style={{ color: "white", paddingTop:'10px' }}>MENU</span>
+          <span style={{ color: "white", paddingTop:'10px' }}>SERVICES</span>
+        </div>
+        <div style={{height: '80%', display:'flex', justifyContent: 'center', alignItems:'center'}}>
+            <div>
+              <h1 style={{color:"white"}}>Welcome to Nikusutei</h1>
+              <h1 style={{color:"white", fontSize:'5rem', marginBlock: '0px'}}>Japanese Muslim Teppanyaki and Sushi</h1>
+            </div>
         </div>
       </div>
       
