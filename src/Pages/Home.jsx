@@ -1,4 +1,5 @@
 import sushiimg from "../images/sushiimg.jpg";
+import { Button } from "react-bootstrap";
 
 // Section for predefined styles
 const styles = {
@@ -49,30 +50,15 @@ function Home() {
             <div>
               <h1 style={{color:"white"}}>Welcome to Nikusutei</h1>
               <h1 style={{color:"white", fontSize:'5rem', marginBlock: '0px'}}>Japanese Muslim Teppanyaki and Sushi</h1>
+              <div style={{display:"flex", justifyContent:'center', marginTop: '30px'}}>
+                <Button size="lg">RESERVE</Button> 
+                <Button size="lg" style={{marginLeft: '20px'}}>ORDER</Button> 
+              </div> 
             </div>
         </div>
       </div>
-      
-      <div>
-        <div>hello</div>
-        <div>hello</div>
-        <div>hello</div>
-        <div>hello</div>
-        <div>hello</div>
-      </div>
-      <div>
-        <div>hello</div>
-        <div>hello</div>
-        <div>hello</div>
-        <div>hello</div>
-        <div>hello</div>
-      </div>
-      <div>
-        <div>hello</div>
-        <div>hello</div>
-        <div>hello</div>
-        <div>hello</div>
-        <div>hello</div>
+      <div style={{textAlign:'center', marginTop:'40px'}}>
+        <h1> Explore Our Latest Specials</h1>
       </div>
     </>
   );
