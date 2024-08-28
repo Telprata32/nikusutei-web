@@ -16,9 +16,23 @@ const styles = {
     display: "flex",
     justifyContent: "space-around",
     top:'0px',
-    width:'40%',
-    marginLeft:'30%',
+    width:'30%',
+    marginLeft:'35%',
     paddingTop: '15px'
+  },
+  Buttons:{
+    title1:{
+      borderRadius:'4px',
+      backgroundColor:'#9b1717',
+      border:'solid 1px #600b0bb0'
+    },
+    title2:{
+      marginLeft: '20px',
+      borderRadius:'4px',
+      backgroundColor: 'white',
+      color: 'maroon',
+      border:'none'
+    }
   }
 }
 
@@ -51,8 +65,8 @@ function Home() {
               <h1 style={{color:"white"}}>Welcome to Nikusutei</h1>
               <h1 style={{color:"white", fontSize:'5rem', marginBlock: '0px'}}>Japanese Muslim Teppanyaki and Sushi</h1>
               <div style={{display:"flex", justifyContent:'center', marginTop: '30px'}}>
-                <Button size="lg">RESERVE</Button> 
-                <Button size="lg" style={{marginLeft: '20px'}}>ORDER</Button> 
+                <Button size="lg" style={styles.Buttons.title1} >MAKE A RESERVATION</Button> 
+                <Button size="lg" style={styles.Buttons.title2}>ORDER ONLINE</Button> 
               </div> 
             </div>
         </div>
