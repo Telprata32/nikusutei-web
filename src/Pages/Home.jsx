@@ -50,15 +50,15 @@ function Home() {
               alignContent: "flex-end",
             }}
           >
-            <span style={{ color: "white", fontSize: "2.4rem" }}>
+            <span style={{ color: "white", fontSize: "2.6rem", lineHeight:'40px', marginTop:'10px' }}>
               NIKUSUTEI
             </span>
             <span style={{ color: "white" }}>Japanese Muslim Restaurant</span>
           </div>
           <span style={{ color: "white", paddingTop:'10px' }}>ABOUT US</span>
-          <span style={{ color: "white", paddingTop:'10px' }}>CONTACT US</span>
           <span style={{ color: "white", paddingTop:'10px' }}>MENU</span>
           <span style={{ color: "white", paddingTop:'10px' }}>SERVICES</span>
+          <span style={{ color: "white", paddingTop:'10px' }}>SWEET OFFERS</span>
         </div>
         <div style={{height: '80%', display:'flex', justifyContent: 'center', alignItems:'center'}}>
             <div>
