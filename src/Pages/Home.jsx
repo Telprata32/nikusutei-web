@@ -1,8 +1,35 @@
+// Importing Images
 import sushiimg from "../images/sushiimg.jpg";
-import { Button } from "react-bootstrap";
+import nanban from "../images/Specials/Tori_Nanban.jpg"
+import takoyaki from "../images/Specials/Takoyaki.jpg"
+
+// Importing other files
+import '../Styles/Main.css';
+
+// Importing Components
+import { Button, Row, Col } from "react-bootstrap";
 
 // Section for predefined styles
 const styles = {
+
+  //============ General styles ============//
+  Buttons:{
+    title1:{
+      borderRadius:'4px',
+      backgroundColor:'#9b1717',
+      border:'solid 1px #600b0bb0'
+    },
+    title2:{
+      marginLeft: '20px',
+      borderRadius:'4px',
+      backgroundColor: 'white',
+      color: 'maroon',
+      border:'none'
+    }
+  },
+
+  //============ Component styles ============//
+  // Top Nav Bar styles
   topNav: {
     width: "100%",
     height: "1000px",
@@ -20,20 +47,16 @@ const styles = {
     marginLeft:'35%',
     paddingTop: '15px'
   },
-  Buttons:{
-    title1:{
-      borderRadius:'4px',
-      backgroundColor:'#9b1717',
-      border:'solid 1px #600b0bb0'
-    },
-    title2:{
-      marginLeft: '20px',
-      borderRadius:'4px',
-      backgroundColor: 'white',
-      color: 'maroon',
-      border:'none'
-    }
+  
+  // Card Styles
+  cardDiv1:{
+    display:'flex',
+    justifyContent: 'center',
+    alignContent:'center',
+    marginBottom: '48px'
   }
+
+  
 }
 
 function Home() {
@@ -71,8 +94,32 @@ function Home() {
             </div>
         </div>
       </div>
-      <div style={{textAlign:'center', marginTop:'40px'}}>
+      <div style={{textAlign:'center', marginTop:'68px'}}>
         <h1> Explore Our Latest Specials</h1>
+        <div style={{marginTop: '28px', marginInline:'10%'}}>
+            <Row>
+              <Col style={styles.cardDiv1}>
+                <div className="prevCard1" style={{backgroundImage:`url(${nanban})`}}> </div>
+              </Col>
+              <Col style={styles.cardDiv1}>
+                <div className="prevCard1" style={{backgroundImage: `url(${takoyaki})`}}>
+
+                </div>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <div className="prevCard1">
+
+                </div>
+              </Col>
+              <Col>
+                <div className="prevCard1">
+
+                </div>
+              </Col>
+            </Row>
+        </div>
       </div>
     </>
   );

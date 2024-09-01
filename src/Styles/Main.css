@@ -1,0 +1,11 @@
+/*============== Components Styles ==============*/
+
+/* Card Styles */
+.prevCard1{
+    --var-width: max(511px,100%); /* Declare width variable */
+
+    background-size: cover;
+    width: var(--var-width);
+    height: calc(var(--var-width)*0.6399);
+    border-radius: 10px;
+}
