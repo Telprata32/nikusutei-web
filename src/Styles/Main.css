@@ -2,10 +2,35 @@
 
 /* Card Styles */
 .prevCard1{
-    --var-width: max(511px,100%); /* Declare width variable */
+    --var-width: 38vw ; /* Declare width variable */
 
     background-size: cover;
     width: var(--var-width);
     height: calc(var(--var-width)*0.6399);
     border-radius: 10px;
+}
+
+/* When screen size reach 596px or below then increase .prevCard1 width */
+@media (width <= 596px) {
+    .prevCard1{
+        --var-width: 70vw;
+    }
+}
+
+/* Top Nav Bar CSS styling */
+.topNav_Bar {
+    display: flex;
+    justify-content: space-around;
+    top:0px;
+    width:30%;
+    margin-left:35%;
+    padding-top: 15px;
+}
+
+/* TopNav_Bar css to help control the css for different screen width */
+@media (width <=1499px) {
+    .topNav_Bar{
+        width: 44%;
+        margin-left: 28%;
+    }
 }

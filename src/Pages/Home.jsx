@@ -1,31 +1,33 @@
 // Importing Images
 import sushiimg from "../images/sushiimg.jpg";
-import nanban from "../images/Specials/Tori_Nanban.jpg"
-import takoyaki from "../images/Specials/Takoyaki.jpg"
+import nanban from "../images/Specials/Tori_Nanban.jpg";
+import takoyaki from "../images/Specials/Takoyaki.jpg";
+import agedashi from "../images/Specials/Agedashi.jpeg";
+import wagyu from "../images/Specials/Wagyu.jpeg";
 
 // Importing other files
-import '../Styles/Main.css';
+import "../Styles/Main.css";
 
 // Importing Components
 import { Button, Row, Col } from "react-bootstrap";
+import { useEffect } from "react";
 
 // Section for predefined styles
 const styles = {
-
   //============ General styles ============//
-  Buttons:{
-    title1:{
-      borderRadius:'4px',
-      backgroundColor:'#9b1717',
-      border:'solid 1px #600b0bb0'
+  Buttons: {
+    title1: {
+      borderRadius: "4px",
+      backgroundColor: "#9b1717",
+      border: "solid 1px #600b0bb0",
     },
-    title2:{
-      marginLeft: '20px',
-      borderRadius:'4px',
-      backgroundColor: 'white',
-      color: 'maroon',
-      border:'none'
-    }
+    title2: {
+      marginLeft: "20px",
+      borderRadius: "4px",
+      backgroundColor: "white",
+      color: "maroon",
+      border: "none",
+    },
   },
 
   //============ Component styles ============//
@@ -39,15 +41,7 @@ const styles = {
     backgroundSize: "cover",
     backgroundAttachment:"fixed",
   },
-  topNav_Bar: {
-    display: "flex",
-    justifyContent: "space-around",
-    top:'0px',
-    width:'30%',
-    marginLeft:'35%',
-    paddingTop: '15px'
-  },
-  
+
   // Card Styles
   cardDiv1:{
     display:'flex',
@@ -64,7 +58,7 @@ function Home() {
     <>
       {/* Top Nav with Food image */}
       <div style={styles.topNav}>
-        <div style={styles.topNav_Bar}>
+        <div className="topNav_Bar">
           <div
             style={{
               display: "flex",
@@ -96,29 +90,39 @@ function Home() {
       </div>
       <div style={{textAlign:'center', marginTop:'68px'}}>
         <h1> Explore Our Latest Specials</h1>
-        <div style={{marginTop: '28px', marginInline:'10%'}}>
-            <Row>
-              <Col style={styles.cardDiv1}>
-                <div className="prevCard1" style={{backgroundImage:`url(${nanban})`}}> </div>
-              </Col>
-              <Col style={styles.cardDiv1}>
-                <div className="prevCard1" style={{backgroundImage: `url(${takoyaki})`}}>
-
-                </div>
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <div className="prevCard1">
-
-                </div>
-              </Col>
-              <Col>
-                <div className="prevCard1">
-
-                </div>
-              </Col>
-            </Row>
+        <div style={{ marginTop: "28px", marginInline: "6%" }}>
+          <Row>
+            <Col style={styles.cardDiv1}>
+              <div
+                id="uniq"
+                className="prevCard1"
+                style={{ backgroundImage: `url(${nanban})` }}
+              >
+              </div>
+            </Col>
+            <Col style={styles.cardDiv1}>
+              <div
+                className="prevCard1"
+                style={{ backgroundImage: `url(${agedashi})` }}
+              ></div>
+            </Col>
+          </Row>
+          <Row>
+            <Col style={styles.cardDiv1}>
+              <div
+                id="uniq"
+                className="prevCard1"
+                style={{ backgroundImage: `url(${wagyu})` }}
+              >
+              </div>
+            </Col>
+            <Col style={styles.cardDiv1}>
+              <div
+                className="prevCard1"
+                style={{ backgroundImage: `url(${takoyaki})` }}
+              ></div>
+            </Col>
+          </Row>
         </div>
       </div>
     </>
