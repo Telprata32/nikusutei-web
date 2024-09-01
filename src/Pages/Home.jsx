@@ -40,6 +40,7 @@ const styles = {
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundAttachment:"fixed",
+    backgroundPositionX:'center'
   },
 
   // Card Styles
@@ -90,7 +91,7 @@ function Home() {
       </div>
       <div style={{textAlign:'center', marginTop:'68px'}}>
         <h1> Explore Our Latest Specials</h1>
-        <div style={{ marginTop: "28px", marginInline: "6%" }}>
+        <div className="cardContainer" style={{ marginTop: "28px", marginInline: "6%" }}>
           <Row>
             <Col style={styles.cardDiv1}>
               <div

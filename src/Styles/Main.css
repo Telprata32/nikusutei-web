@@ -1,12 +1,18 @@
 /*============== Components Styles ==============*/
 
+/* Specials Card Container */
+.cardContainer{
+    margin-top: 28px;
+    margin-inline: 13%;
+}
+
 /* Card Styles */
 .prevCard1{
-    --var-width: 38vw ; /* Declare width variable */
+    --var-width: 31vw ; /* Declare width variable */
 
     background-size: cover;
     width: var(--var-width);
-    height: calc(var(--var-width)*0.6399);
+    height: calc(var(--var-width)*0.5);
     border-radius: 10px;
 }
 
@@ -14,6 +20,11 @@
 @media (width <= 596px) {
     .prevCard1{
         --var-width: 70vw;
+        height: calc(var(--var-width)*0.6399);
+    }
+
+    .cardContainer{
+        margin-inline: 6%;
     }
 }
 
