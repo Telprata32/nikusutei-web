@@ -1,4 +1,4 @@
-// Importing Images
+// Importing Assets
 import sushiimg from "../images/sushiimg.jpg";
 import nanban from "../images/Specials/Tori_Nanban.jpg";
 import takoyaki from "../images/Specials/Takoyaki.jpg";
@@ -42,6 +42,11 @@ const styles = {
     backgroundAttachment:"fixed",
     backgroundPositionX:'center'
   },
+  topNav_links: {
+    color: "white",
+    paddingTop:'10px',
+    textDecoration: 'none'
+  },
 
   // Card Styles
   cardDiv1:{
@@ -73,10 +78,10 @@ function Home() {
             </span>
             <span style={{ color: "white" }}>Japanese Muslim Restaurant</span>
           </div>
-          <span style={{ color: "white", paddingTop:'10px' }}>ABOUT US</span>
-          <span style={{ color: "white", paddingTop:'10px' }}>MENU</span>
-          <span style={{ color: "white", paddingTop:'10px' }}>SERVICES</span>
-          <span style={{ color: "white", paddingTop:'10px' }}>SWEET OFFERS</span>
+          <a href="" style={styles.topNav_links}>ABOUT US</a>
+          <a href="Menu" style={styles.topNav_links}>MENU</a>
+          <a href="" style={styles.topNav_links}>SERVICES</a>
+          <a href="" style={styles.topNav_links}>SWEET OFFERS</a>
         </div>
         <div style={{height: '80%', display:'flex', justifyContent: 'center', alignItems:'center'}}>
             <div>
