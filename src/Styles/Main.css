@@ -38,6 +38,11 @@
     padding-top: 15px;
 }
 
+.topNav_Bar a:hover{
+    color: #ac0808 !important;
+    text-shadow: #dc1e0fe8 0px 0px 13px;
+}
+
 /* TopNav_Bar css to help control the css for different screen width */
 @media (width <=1499px) {
     .topNav_Bar{
