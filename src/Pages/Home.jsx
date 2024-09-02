@@ -96,7 +96,7 @@ function Home() {
       </div>
       <div style={{textAlign:'center', marginTop:'68px'}}>
         <h1> Explore Our Latest Specials</h1>
-        <div className="cardContainer" style={{ marginTop: "28px", marginInline: "6%" }}>
+        <div className="cardContainer" style={{ marginTop: "28px", marginInline: "12%" }}>
           <Row>
             <Col style={styles.cardDiv1}>
               <div

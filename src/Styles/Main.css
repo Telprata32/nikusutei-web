@@ -39,8 +39,8 @@
 }
 
 .topNav_Bar a:hover{
-    color: #ac0808 !important;
-    text-shadow: #dc1e0fe8 0px 0px 13px;
+    color: #ffffff !important;
+    text-shadow: #dc1e0fe8 0px 0px 13px, #d1646d 0px 0px 24px, #e39f9f 0px 0px 35px, #ada67e 0px 0px 50px;
 }
 
 /* TopNav_Bar css to help control the css for different screen width */
