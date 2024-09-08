@@ -1,6 +1,21 @@
 // Import assets
 import sushi from '../images/sushi2.png'
 
+const styles = {
+    menuNav: {
+        display: 'flex',
+        backgroundColor: '#A14B54',
+        justifyContent: 'space-around'
+    },
+
+    menuNavLabel:{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        color: 'white'
+    }
+}
+
 function Menu(){
     return(
         <>
@@ -10,7 +25,23 @@ function Menu(){
                     <h4 style={{color: '#920000'}}>Japanese Muslim Restaurant</h4>
                 </div>
             </div>
-    
+            <div style={styles.menuNav}>
+                <div style={styles.menuNavLabel}>
+                    <label> Rice Bowl</label>
+                </div>
+                <div style={styles.menuNavLabel}>
+                    <label> Noodles and Pastas</label>
+                </div>
+                <div style={styles.menuNavLabel}>
+                    <label> Sushi</label>
+                </div>
+                <div style={styles.menuNavLabel}>
+                    <label> Appetizers</label>
+                </div>
+                <div style={styles.menuNavLabel}>
+                    <label> Ala Carte</label>
+                </div>
+            </div>
         </>
     )
 }
