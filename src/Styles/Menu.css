@@ -1,0 +1,25 @@
+/*=================== CSS for the menu page ===================*/
+
+/* Menu Navigation Bar */
+.menuNav-label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin-block: 9px;
+    border-radius: 15px;
+    padding: 7px 10px;
+}
+.menuNav-label:hover{
+    background: #f3859461;
+}
+
+.menuNav-label img{
+    height: 29px; 
+    font-size: 0.8rem;
+}
+
+.menuNav-label label{
+    
+    font-size: 0.9rem;
+}

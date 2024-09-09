@@ -1,5 +1,9 @@
 // Import assets
 import sushi from '../images/sushi2.png'
+import ricebowl from '../images/Menu/ricebowl.svg'
+
+// Import Styling
+import '../Styles/Menu.css'
 
 const styles = {
     menuNav: {
@@ -7,13 +11,6 @@ const styles = {
         backgroundColor: '#A14B54',
         justifyContent: 'space-around'
     },
-
-    menuNavLabel:{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        color: 'white'
-    }
 }
 
 function Menu(){
@@ -26,19 +23,20 @@ function Menu(){
                 </div>
             </div>
             <div style={styles.menuNav}>
-                <div style={styles.menuNavLabel}>
+                <div className='menuNav-label'>
+                    <img src={ricebowl} />
                     <label> Rice Bowl</label>
                 </div>
-                <div style={styles.menuNavLabel}>
+                <div className='menuNav-label'>
                     <label> Noodles and Pastas</label>
                 </div>
-                <div style={styles.menuNavLabel}>
+                <div className='menuNav-label'>
                     <label> Sushi</label>
                 </div>
-                <div style={styles.menuNavLabel}>
+                <div className='menuNav-label'>
                     <label> Appetizers</label>
                 </div>
-                <div style={styles.menuNavLabel}>
+                <div className='menuNav-label'>
                     <label> Ala Carte</label>
                 </div>
             </div>
